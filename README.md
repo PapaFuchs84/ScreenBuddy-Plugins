@@ -16,6 +16,8 @@ Der signierte Plugin-Store für [ScreenBuddy](https://github.com/PapaFuchs84/Scr
 
 Die CI lehnt jede Änderung ab, bei der `plugins/` und der signierte Index nicht zusammenpassen.
 
+**Vorschaubilder:** Jedes Plugin kann ein Vorschaubild haben (`previews/<id>.png`, PNG, höchstens 200 KiB, höchstens 1024 px je Seite; Beispieldaten, keine Live-Daten). Der Maintainer erzeugt daraus `docs/previews.json` (SHA-256 je Bild) und signiert sie offline; die Bilder liegen als `docs/plugins/<id>/preview.png`. Die Datei ist von `index.json` getrennt, ältere ScreenBuddy-Versionen ignorieren sie. Die App prüft Signatur, Größe und SHA-256, bevor sie ein Bild zeigt.
+
 Regeln, Lizenz und Datenschutz: [Store-Bedingungen](https://github.com/PapaFuchs84/ScreenBuddy/blob/main/docs/PLUGIN-STORE-BEDINGUNGEN.md) (Entwurf). Ein Plugin melden: [Issue „Plugin melden“](https://github.com/PapaFuchs84/ScreenBuddy/issues/new?template=plugin-melden.yml).
 
 **Stand:** Der Store ist im Aufbau. Solange `docs/index.json` fehlt oder ScreenBuddy keinen Signaturschlüssel eingebaut hat, zeigt die App „nicht verfügbar“.

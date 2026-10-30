@@ -35,3 +35,9 @@ jobs:
           if [ -z "$KEY" ]; then echo "ScreenBuddy hat noch keinen Signaturschlüssel eingebaut: Indexprüfung übersprungen."; exit 0; fi
           if [ ! -f docs/index.json ]; then echo "docs/index.json fehlt."; exit 1; fi
           "$RUNNER_TEMP/fl-plugin-sign" check-index plugins docs/index.json "$KEY"
+      - name: Vorschaubilder prüfen
+        run: |
+          KEY=$(grep -o 'store_public_key_hex = "[0-9a-f]*"' screenbuddy/cpp/src/plugin_sign.h | sed 's/.*"\(.*\)"/\1/')
+          if [ -z "$KEY" ] || [ ! -f docs/previews.json ]; then echo "Keine Vorschaubilder veröffentlicht: Prüfung übersprungen."; exit 0; fi
+          "$RUNNER_TEMP/fl-plugin-sign" check-previews previews docs/previews.json "$KEY"
+          for f in previews/*.png; do id=$(basename "$f" .png); cmp -s "$f" "docs/plugins/$id/preview.png" || { echo "docs/plugins/$id/preview.png weicht von previews/$id.png ab."; exit 1; }; done
