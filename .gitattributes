@@ -1,0 +1,4 @@
+# Signierte Dateien müssen byte-genau gleich bleiben (kein CRLF)
+* -text
+*.json text eol=lf
+*.sig text eol=lf
