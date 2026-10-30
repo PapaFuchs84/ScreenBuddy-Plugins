@@ -1,0 +1,54 @@
+{
+  "previews": [
+    {
+      "file": "plugins/game-night/preview.png",
+      "id": "game-night",
+      "sha256": "b20b9c43f01981c022ffd831160aa93bc381dc70588bcdeb2ea194fe61791a6f",
+      "size": 13872
+    },
+    {
+      "file": "plugins/offline-clock/preview.png",
+      "id": "offline-clock",
+      "sha256": "afc0534414bb9096ea4adffacc58e1d14dea48cd01d4aa3a89c4e7f2a441dc8b",
+      "size": 5409
+    },
+    {
+      "file": "plugins/offline-focus/preview.png",
+      "id": "offline-focus",
+      "sha256": "74be0e9deae49a7f27cafd882fc36f7d66d3f2513bf282f9ffe13516471235d6",
+      "size": 14531
+    },
+    {
+      "file": "plugins/pomodoro-board/preview.png",
+      "id": "pomodoro-board",
+      "sha256": "5aa3c44e24c216d185275906dfce789ddfd4f584e3a853b57417e7e3a039b188",
+      "size": 13071
+    },
+    {
+      "file": "plugins/public-weather/preview.png",
+      "id": "public-weather",
+      "sha256": "5f75ff67cfbe2efa96606a1a7d5d5585f67d793007a2ecb3191548c347c3c85f",
+      "size": 17215
+    },
+    {
+      "file": "plugins/quote-card/preview.png",
+      "id": "quote-card",
+      "sha256": "4311d34502efd036354cceadd9b231aea0fa503733dd4d37b6a8d77af42a6f65",
+      "size": 11034
+    },
+    {
+      "file": "plugins/todo-three/preview.png",
+      "id": "todo-three",
+      "sha256": "b63cfe8e0be2a456d4d2579be0bcf98b70fec306d27b4ff03b7816a82e17c8b1",
+      "size": 11283
+    },
+    {
+      "file": "plugins/water-tracker/preview.png",
+      "id": "water-tracker",
+      "sha256": "e7d831ea1e129d8e4ea20f65a11cc44bb7780d610da93fb1bce5f9b46fb8fa52",
+      "size": 12462
+    }
+  ],
+  "schema_version": 1,
+  "sequence": 1
+}

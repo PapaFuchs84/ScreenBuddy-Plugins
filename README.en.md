@@ -16,6 +16,8 @@ The signed plugin store for [ScreenBuddy](https://github.com/PapaFuchs84/ScreenB
 
 CI rejects every change where `plugins/` and the signed index do not match.
 
+**Preview images:** every plugin can have a preview image (`previews/<id>.png`, PNG, at most 200 KiB, at most 1024 px per side; sample data, no live data). The maintainer builds `docs/previews.json` (SHA-256 per image) from them and signs it offline; the images are served as `docs/plugins/<id>/preview.png`. The file is separate from `index.json`; older ScreenBuddy versions ignore it. The app checks signature, size and SHA-256 before showing an image.
+
 Rules, license and privacy: [store terms](https://github.com/PapaFuchs84/ScreenBuddy/blob/main/docs/PLUGIN-STORE-TERMS.md) (draft). Report a plugin: [issue "Report a plugin"](https://github.com/PapaFuchs84/ScreenBuddy/issues/new?template=plugin-melden.yml).
 
 **Status:** the store is being set up. While `docs/index.json` is missing or ScreenBuddy has no signing key built in, the app shows "not available".
