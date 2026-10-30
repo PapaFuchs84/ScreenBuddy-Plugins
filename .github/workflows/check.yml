@@ -1,0 +1,37 @@
+# © 2026 FuchsLabs – prüft Plugins mit dem Validator der App und den signierten Index (kein Schlüssel nötig)
+name: Check plugins
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: PapaFuchs84/ScreenBuddy
+          ref: main
+          path: screenbuddy
+      - name: Tools bauen
+        run: |
+          sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libssl-dev
+          cd screenbuddy/cpp
+          g++ -std=c++20 -O1 -Isrc src/plugins.cpp tools/plugin_validate.cpp -o "$RUNNER_TEMP/fl-plugin-validate"
+          g++ -std=c++20 -O1 -Isrc src/plugins.cpp src/plugin_sign.cpp tools/plugin_sign.cpp -lcrypto -o "$RUNNER_TEMP/fl-plugin-sign"
+      - name: Plugins prüfen
+        run: |
+          "$RUNNER_TEMP/fl-plugin-validate" --store --app-version 2.5.0 plugins
+          test "$(find plugins -type f ! -name '*.flplugin.json' | wc -l)" = 0 || { echo "Nur .flplugin.json-Dateien sind erlaubt."; exit 1; }
+      - name: Signierten Index prüfen
+        run: |
+          KEY=$(grep -o 'store_public_key_hex = "[0-9a-f]*"' screenbuddy/cpp/src/plugin_sign.h | sed 's/.*"\(.*\)"/\1/')
+          if [ -z "$KEY" ]; then echo "ScreenBuddy hat noch keinen Signaturschlüssel eingebaut: Indexprüfung übersprungen."; exit 0; fi
+          if [ ! -f docs/index.json ]; then echo "docs/index.json fehlt."; exit 1; fi
+          "$RUNNER_TEMP/fl-plugin-sign" check-index plugins docs/index.json "$KEY"
