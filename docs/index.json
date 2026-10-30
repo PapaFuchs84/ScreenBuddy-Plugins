@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T20:03:00Z",
+  "generated": "2026-10-30T20:13:37Z",
   "plugins": [
     {
       "author": "FuchsLabs",
@@ -11,8 +11,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Spieleabend / Game night",
-      "sha256": "d8eac66fca23f403bef9148f1b59f9c05203e89550a944aaaf492b9fdf9d186c",
-      "size": 1329,
+      "sha256": "09409389c438013101489edf7b1a1cef89fb941b9475062e5f8c2648a2a2e1c4",
+      "size": 1268,
       "version": "1.0.0"
     },
     {
@@ -25,8 +25,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Uhr / Clock",
-      "sha256": "fa628c8bc529617576b40b9716b25b82df81ac5369f067be1c7525a568527b23",
-      "size": 342,
+      "sha256": "3dcc774cf268d89306f08f7209160fa43ebd65ff8e8129ca2548de92f5fa5bc3",
+      "size": 328,
       "version": "1.0.0"
     },
     {
@@ -39,8 +39,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Fokus / Focus",
-      "sha256": "d88f62a0331cfe93bd2a2b31bd46ebce2979a0672a3897b147538483424e51ad",
-      "size": 1108,
+      "sha256": "f4bf196f4c4473f7e649b997d539de3861cc721c01803acf56f3d9910a38c752",
+      "size": 1085,
       "version": "1.0.0"
     },
     {
@@ -53,8 +53,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Pomodoro-Tafel / Pomodoro board",
-      "sha256": "0e1c2a0652543a9a773796b0178af229b5eb3653c3871f18e13aa1baec70ddae",
-      "size": 1453,
+      "sha256": "dcf813d4397d76d7690d1c8d5a7c570ac28b357a864b76d10596c86e45202645",
+      "size": 1390,
       "version": "1.0.0"
     },
     {
@@ -69,8 +69,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Wetter / Weather",
-      "sha256": "d230e8422dd77c8e13a6805b2c22df4ee0ca195dbc5b31dea22aa88a7f891822",
-      "size": 1755,
+      "sha256": "cc70604a1e7dde9e0abb3b0f4b68437225015375a5621c69c2429b9d1b3d2848",
+      "size": 1720,
       "version": "1.0.0"
     },
     {
@@ -83,8 +83,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Zitat-Karte / Quote card",
-      "sha256": "286f5cc72fca416145e3081dc1d679f05f0da3dab8816669c469851ef1620074",
-      "size": 930,
+      "sha256": "27160ca30591140fb933b08390d78fbd39225eab8475addd2787c0d04efab9a3",
+      "size": 889,
       "version": "1.0.0"
     },
     {
@@ -97,8 +97,8 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Drei Aufgaben / Three tasks",
-      "sha256": "53d9dc55aa372bd5390a5465550d4326b542930c5adc11cce3f9847d933ecf3e",
-      "size": 1131,
+      "sha256": "dc38db89302a71b2f9ca0f088790d21785121ec71bbf8dc7d712f42fc05091b7",
+      "size": 1078,
       "version": "1.0.0"
     },
     {
@@ -111,11 +111,11 @@
       "license": "MIT",
       "min_app_version": "2.5.0",
       "name": "Trink-Erinnerung / Water tracker",
-      "sha256": "4afcf1e6520d87696d816dab07e2cb471d092a3bf67e3ccc2595846d167c7e1e",
-      "size": 1068,
+      "sha256": "557e88365ff4a8e9666ccfe5daaa77c6b2aba9aef3e83cc09065da88952c9e86",
+      "size": 1023,
       "version": "1.0.0"
     }
   ],
   "schema_version": 1,
-  "sequence": 1
+  "sequence": 2
 }
