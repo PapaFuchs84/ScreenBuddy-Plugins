@@ -1,0 +1,121 @@
+{
+  "generated": "2026-10-30T20:03:00Z",
+  "plugins": [
+    {
+      "author": "FuchsLabs",
+      "category": "games",
+      "description": "Spiel, Startzeit und Mitspielerzahl für den Spieleabend, von Hand eingetragen. Kein Netzwerk.",
+      "file": "plugins/game-night/game-night.flplugin.json",
+      "hosts": [],
+      "id": "game-night",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Spieleabend / Game night",
+      "sha256": "d8eac66fca23f403bef9148f1b59f9c05203e89550a944aaaf492b9fdf9d186c",
+      "size": 1329,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "system",
+      "description": "Einfache Uhr ohne Netzwerk / Simple offline clock.",
+      "file": "plugins/offline-clock/offline-clock.flplugin.json",
+      "hosts": [],
+      "id": "offline-clock",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Uhr / Clock",
+      "sha256": "fa628c8bc529617576b40b9716b25b82df81ac5369f067be1c7525a568527b23",
+      "size": 342,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "info",
+      "description": "Lokales Fokusboard / Local focus board. Manual progress; no timer, network or code execution.",
+      "file": "plugins/offline-focus/offline-focus.flplugin.json",
+      "hosts": [],
+      "id": "offline-focus",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Fokus / Focus",
+      "sha256": "d88f62a0331cfe93bd2a2b31bd46ebce2979a0672a3897b147538483424e51ad",
+      "size": 1108,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "info",
+      "description": "Lernen oder arbeiten in Blöcken: Blocklänge, Pause und erledigte Blöcke von Hand eintragen. Kein Timer, kein Netzwerk.",
+      "file": "plugins/pomodoro-board/pomodoro-board.flplugin.json",
+      "hosts": [],
+      "id": "pomodoro-board",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Pomodoro-Tafel / Pomodoro board",
+      "sha256": "0e1c2a0652543a9a773796b0178af229b5eb3653c3871f18e13aa1baec70ddae",
+      "size": 1453,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "info",
+      "description": "Optional public Open-Meteo example; sends coordinates to api.open-meteo.com. Sample values are fictional. Review provider terms before use.",
+      "file": "plugins/public-weather/public-weather.flplugin.json",
+      "hosts": [
+        "api.open-meteo.com"
+      ],
+      "id": "public-weather",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Wetter / Weather",
+      "sha256": "d230e8422dd77c8e13a6805b2c22df4ee0ca195dbc5b31dea22aa88a7f891822",
+      "size": 1755,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "other",
+      "description": "Ein eigener Spruch mit Urheber, frei einstellbar. Kein Netzwerk, keine fremden Texte.",
+      "file": "plugins/quote-card/quote-card.flplugin.json",
+      "hosts": [],
+      "id": "quote-card",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Zitat-Karte / Quote card",
+      "sha256": "286f5cc72fca416145e3081dc1d679f05f0da3dab8816669c469851ef1620074",
+      "size": 930,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "info",
+      "description": "Die drei wichtigsten Aufgaben des Tages als Text auf dem Display. Kein Netzwerk.",
+      "file": "plugins/todo-three/todo-three.flplugin.json",
+      "hosts": [],
+      "id": "todo-three",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Drei Aufgaben / Three tasks",
+      "sha256": "53d9dc55aa372bd5390a5465550d4326b542930c5adc11cce3f9847d933ecf3e",
+      "size": 1131,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "category": "other",
+      "description": "Gläser Wasser heute zählen und das Tagesziel auf dem Display sehen. Kein Timer, kein Netzwerk.",
+      "file": "plugins/water-tracker/water-tracker.flplugin.json",
+      "hosts": [],
+      "id": "water-tracker",
+      "license": "MIT",
+      "min_app_version": "2.5.0",
+      "name": "Trink-Erinnerung / Water tracker",
+      "sha256": "4afcf1e6520d87696d816dab07e2cb471d092a3bf67e3ccc2595846d167c7e1e",
+      "size": 1068,
+      "version": "1.0.0"
+    }
+  ],
+  "schema_version": 1,
+  "sequence": 1
+}
