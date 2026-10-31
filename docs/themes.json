@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "sequence": 1,
+  "themes": [
+    {
+      "author": "FuchsLabs",
+      "description": "Helles Design im Stil moderner Apple-Oberflächen (ohne fremde Logos)",
+      "file": "themes/cupertino-stil/cupertino-stil.fltheme.json",
+      "id": "cupertino-stil",
+      "license": "MIT",
+      "name": "Cupertino-Stil",
+      "sha256": "f5e3a4d5851364b43cb5e76069458d57ebb9f0edf55e4bb19dac1a33fe3f6e6b",
+      "size": 315,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "description": "Helles Design im Stil von Windows Fluent (ohne fremde Logos)",
+      "file": "themes/fluent-stil/fluent-stil.fltheme.json",
+      "id": "fluent-stil",
+      "license": "MIT",
+      "name": "Fluent-Stil",
+      "sha256": "169ef0400a0ace5dccc37c596c26f16886476b43fcd5fd9534e893af01e0e4fd",
+      "size": 312,
+      "version": "1.0.0"
+    },
+    {
+      "author": "FuchsLabs",
+      "description": "Helles Design im Stil von Material Design (ohne fremde Logos)",
+      "file": "themes/material-stil/material-stil.fltheme.json",
+      "id": "material-stil",
+      "license": "MIT",
+      "name": "Material-Stil",
+      "sha256": "17f988d371f72204c61246aec8b7bfc66d986459bfbafcd1a8a85d0338e33dc3",
+      "size": 315,
+      "version": "1.0.0"
+    }
+  ]
+}
